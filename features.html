@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Cakes - patricia cakes & bakes</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .cake-item {
+      text-align: center;
+    }
+    .buy-btn {
+      margin-top: 10px;
+      background-color: #d2691e;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .buy-btn:hover {
+      background-color: #b85a1b;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,13 +49,97 @@
     <div class="container">
       <h2>Our Cake Gallery</h2>
       <div class="gallery-grid">
-        <img src="images/cake1.jpg" alt="Chocolate Delight" />
-        <img src="images/cake2.jpg" alt="Vanilla Dream" />
-        <img src="images/cake3.jpg" alt="Berry Bliss" />
-        <img src="images/cake4.jpg" alt="Lemon Twist" />
-        <img src="images/cake5.jpg" alt="Party Sprinkle" />
-        <img src="images/cake6.jpg" alt="Fruit Fantasy" />
-        <img src="images/cake7.jpg" alt="Fruit Fantasy" />
+
+        <!-- Cake 1 -->
+        <div class="cake-item">
+          <img src="images/cake1.jpg" alt="Chocolate Delight" />
+          <p>Chocolate Delight - ZMW 150</p>
+          <button class="buy-btn" onclick="payNow('Chocolate Delight', 150)">Buy Now</button>
+        </div>
+
+        <!-- Cake 2 -->
+        <div class="cake-item">
+          <img src="images/cake2.jpg" alt="Vanilla Dream" />
+          <p>Vanilla Dream - ZMW 130</p>
+          <button class="buy-btn" onclick="payNow('Vanilla Dream', 130)">Buy Now</button>
+        </div>
+
+        <!-- Cake 3 -->
+        <div class="cake-item">
+          <img src="images/cake3.jpg" alt="Berry Bliss" />
+          <p>Berry Bliss - ZMW 140</p>
+          <button class="buy-btn" onclick="payNow('Berry Bliss', 140)">Buy Now</button>
+        </div>
+
+        <!-- Cake 4 -->
+        <div class="cake-item">
+          <img src="images/cake4.jpg" alt="Lemon Twist" />
+          <p>Lemon Twist - ZMW 120</p>
+          <button class="buy-btn" onclick="payNow('Lemon Twist', 120)">Buy Now</button>
+        </div>
+
+        <!-- Cake 5 -->
+        <div class="cake-item">
+          <img src="images/cake5.jpg" alt="Party Sprinkle" />
+          <p>Party Sprinkle - ZMW 160</p>
+          <button class="buy-btn" onclick="payNow('Party Sprinkle', 160)">Buy Now</button>
+        </div>
+
+        <!-- Cake 6 -->
+        <div class="cake-item">
+          <img src="images/cake6.jpg" alt="Fruit Fantasy" />
+          <p>Fruit Fantasy - ZMW 170</p>
+          <button class="buy-btn" onclick="payNow('Fruit Fantasy', 170)">Buy Now</button>
+        </div>
+
+        <!-- Cake 7 -->
+        <div class="cake-item">
+          <img src="images/cake7.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>
+        <div class="cake-item">
+          <img src="images/cake8.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake9.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake10.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake11.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake12.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake13.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake14.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake15.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake16.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>        <div class="cake-item">
+          <img src="images/cake17.jpg" alt="Berry Mix" />
+          <p>Berry Mix - ZMW 145</p>
+          <button class="buy-btn" onclick="payNow('Berry Mix', 145)">Buy Now</button>
+        </div>
+
       </div>
     </div>
   </section>
@@ -42,5 +149,30 @@
       <p>&copy; 2025 patricia cakes & bakes. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function payNow(cakeName, amount) {
+      FlutterwaveCheckout({
+        public_key: "YOUR_PUBLIC_KEY_HERE",
+        tx_ref: "cakeTX_" + Date.now(),
+        amount: amount,
+        currency: "ZMW",
+        payment_options: "card,mobilemoneyzambia",
+        customer: {
+          email: "customer@email.com",
+          phone_number: "0960000000",
+          name: "Cake Customer",
+        },
+        callback: function (data) {
+          alert("Thank you for buying " + cakeName + "! Transaction ID: " + data.transaction_id);
+        },
+        customizations: {
+          title: "patricia cakes & bakes",
+          description: "Payment for " + cakeName,
+          logo: "https://yourwebsite.com/logo.png",
+        },
+      });
+    }
+  </script>
 </body>
 </html>
